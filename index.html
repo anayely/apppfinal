@@ -1,0 +1,428 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title> APLICACION FINAL</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/temasapp2.min.css">
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css">
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css">
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+
+</head>
+<link rel="stylesheet" type="text/css" href="visor/engine1/style.css" />
+	<script type="text/javascript" src="visor/engine1/jquery.js"></script>
+    <link rel="stylesheet" type="text/css" href="visor2/engine1/style.css" />
+	<script type="text/javascript" src="visor2/engine1/jquery.js"></script>
+<body onLoad="MM_preloadImages('imagenes/a.jpg','imagenes/b.jpg','imagenes/c.jpg','imagenes/d.jpg')"> 
+ 
+<div data-role="page" id="principal" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="regresar" data-back-btn-theme="a">
+   <h1>UNIVERSIDADES</h1>
+  </div>
+  <!-- Start WOWSlider.com HEAD section --> <!-- add to the <head> of your page -->
+	<link rel="stylesheet" type="text/css" href="visor/engine1/style.css" />
+	<script type="text/javascript" src="visor/engine1/jquery.js"></script>
+	<!-- End WOWSlider.com HEAD section -->
+    
+
+ 
+	<!-- Start WOWSlider.com BODY section --> <!-- add to the <body> of your page -->
+	<div id="wowslider-container1">
+	<div class="ws_images"><ul>
+		<li><img src="visor/data1/images/a.jpg" alt="a" title="a" id="wows1_0"/></li>
+		<li><img src="visor/data1/images/b.jpg" alt="b" title="b" id="wows1_1"/></li>
+		<li><img src="visor/data1/images/c.jpg" alt="c" title="c" id="wows1_2"/></li>
+		<li><img src="visor/data1/images/d.jpg" alt="d" title="d" id="wows1_3"/></li>
+		<li><img src="visor/data1/images/e.jpg" alt="e" title="e" id="wows1_4"/></li>
+		<li><img src="visor/data1/images/f.jpg" alt="f" title="f" id="wows1_5"/></li>
+		<li><img src="visor/data1/images/g.jpg" alt="g" title="g" id="wows1_6"/></li>
+		<li><a href="http://wowslider.net"><img src="visor/data1/images/h.jpg" alt="http://wowslider.net/" title="h" id="wows1_7"/></a></li>
+		<li><img src="visor/data1/images/i.jpg" alt="i" title="i" id="wows1_8"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="a"><span><img src="visor/data1/tooltips/a.jpg" alt="a"/>1</span></a>
+		<a href="#" title="b"><span><img src="visor/data1/tooltips/b.jpg" alt="b"/>2</span></a>
+		<a href="#" title="c"><span><img src="visor/data1/tooltips/c.jpg" alt="c"/>3</span></a>
+		<a href="#" title="d"><span><img src="visor/data1/tooltips/d.jpg" alt="d"/>4</span></a>
+		<a href="#" title="e"><span><img src="visor/data1/tooltips/e.jpg" alt="e"/>5</span></a>
+		<a href="#" title="f"><span><img src="visor/data1/tooltips/f.jpg" alt="f"/>6</span></a>
+		<a href="#" title="g"><span><img src="visor/data1/tooltips/g.jpg" alt="g"/>7</span></a>
+		<a href="#" title="h"><span><img src="visor/data1/tooltips/h.jpg" alt="h"/>8</span></a>
+		<a href="#" title="i"><span><img src="visor/data1/tooltips/i.jpg" alt="i"/>9</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">wowslider</a> by WOWSlider.com v8.7</div>
+	<div class="ws_shadow"></div>
+	</div>	
+	<script type="text/javascript" src="visor/engine1/wowslider.js"></script>
+	<script type="text/javascript" src="visor/engine1/script.js"></script>
+	<!-- End WOWSlider.com BODY section -->
+    
+<div>
+     <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-a">
+     <li class="ui-first-child ui-last-child">
+     <a href="#pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>CRIMINOLOGIA</h2>
+        </a>
+       </li>
+      
+      
+     <li class="ui-first-child ui-last-child">
+       <a href="#pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>ASTRONOMIA</h2>
+       </a>
+     </li>
+     
+    <li class="ui-first-child ui-last-child">
+       <a href="#pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>DERECHO</h2>
+       </a>
+    </li>
+   </ul>
+  </div>
+  
+<div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+     <h2>DATOS DEL AUTOS</h2>
+     <P>CENTRO DE BACHILLERATO TECNOLOGICO INDUSTRIAL Y DE SERVICION NUMERO 16</P>
+    <P>ANA YELI ROJAS GONZALEZ</P>
+    <P>    4 H</P>
+    </div>
+    </div>
+     
+<div data-role="footer" align="center" data-theme="b">
+    <div>
+       <img src="imagenes/mdpi.png"  width="46" height="46">
+    </div>
+    <div>
+     
+      <h4>APLICACION FINAL</h4>
+      <h4>ANA YELI ROJAS GONZALEZ</h4>
+    </div>
+</div>
+</div>
+
+ 
+<div data-role="page" id="pagina1" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+    <h1>CRIMINOLOGIA</h1>
+    </div>
+   <div data-role="content" align="center">
+    <div>
+    <center><img src="imagenes/aaaa.jpg" width="275" height="183"></center>
+       <p><CENTER>¿QUE SE HACE?</CENTER></p>
+<P>
+Un licenciado en Criminología es un profesionista preparado para afrontar las realidades sociales de inseguridad que vive el país, líder comprometido con la sociedad, propositivo, que busque continuamente una tendencia preventiva; para mejorar el sistema de Justicia Mexicano que vislumbre nuevos modelos y políticas criminológicas, con la capacidad de generar nuevos conocimientos en el estudio del criminal y la víctima para una mejor procuración e impartición de justicia.</p>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image12','','imagenes/aaaa.jpg',1)"><img src="imagenes/bbbb.jpg" width="275" height="183" id="Image12"></a>
+<p><CENTER>CAMPO LABORAL</CENTER></p>
+<p> Haciendo investigaciones o peritajes para el sector público.
+Policía ministerial.
+En el área de investigación, donde puede proponer e innovar en temas como técnicas periciales, tratamiento penitenciario entre otros.
+Docente e investigador universitario.
+Como investigador privado en materia criminal.</p>
+</p><CENTER>FORMA DEL PERFIL DE EGRESO</CENTER></p>
+<p>Tener interés por la justicia.
+Capacidad de análisis y síntesis.
+Disposición humanista
+Poseer habilidades para la observación, deliberación y resolución.
+Facilidad para el estudio de casos.
+
+</p>
+</p><CENTER>PERFIL DE EGRESO</CENTER></p>
+<p>Tener interés por la justicia.
+Capacidad de análisis y síntesis.
+Disposición humanista
+Poseer habilidades para la observación, deliberación y resolución.
+Facilidad para el estudio de casos.
+Asesora en la procuración e impartición de justicia.
+Capacita en los sistemas de seguridad pública.
+Diseña estrategias preventivas del delito.
+Propone nuevas soluciones a los problemas de readaptación penitenciaría.
+Resuelve investigaciones por medio de la perfilación criminal.
+Aplica los conocimientos de criminología a casos concretos.
+Diseña programas de prevención del delito.
+Atiende a víctimas del delito.
+Líderes en reinserción social.
+Emprendedores para el desarrollo de nuevos modelos preventivos.
+Comprometidos con el bien común.
+Tratamiento al delincuente dentro y fuera del centro de readaptación social.
+Elabora políticas criminológicas.
+Elabora perfiles criminales.
+Aplica nuevo sistema penal (acusatorio oral).
+Elabora modelos preventivos.
+Analiza el modo de operar de la delincuencia común y organizada.
+Desarrolla programas de seguridad pública.
+Realiza investigaciones para el estudio del criminal en sociedad.
+</p>
+</DIV>
+</div>
+
+<div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+      <h2>REQUISITOS PARA INGRSAR A UNA ESCUELA DE CRIMINOLOGIA EN LA UNAM</h2>
+<P>
+Inscripción definitiva 1er ingreso
+CategoríaAdmisionesAsignado aAspirantes
+Para realizar la matrícula definitiva en la Universidad Autónoma de Nuevo León deberás cumplir con los siguientes requisitos:</P>
+
+<P>Estudiante de primer ingreso a preparatoria, licenciatura y posgrado:</P>
+
+<P>Haber APROBADO el examen de concurso de ingreso.
+Estudiantes oficiales procedentes de escuelas preparatorias, licenciatura y posgrado de la UANL:
+
+Imprimir en la página WEB con su contraseña su recibo de aviso de cuotas escolares expedido por la Tesorería General de la UANL, para el semestre a cursar, así como el instructivo de inscripción definitiva sistematizada, en el cual se indica la fecha de inscripción en la dependencia a ingresar, por lo que NO es necesario acudir a las ventanillas del Departamento Escolar y de Archivo de la UANL a entregar documentos, debido a que la revisión de los mismos se realizará en forma electrónica y la autorización de la inscripción definitiva se efectuará automáticamente por el Sistema Integral para la Administración de los Servicios Educativos.
+ Efectuar el pago del recibo de cuotas escolares en la institución bancaria indicada, antes de la fecha de vencimiento. 
+Para los estudiantes de preparatoria, licenciatura y posgrado ajenos a la UANL:</P>
+
+<P>Solicitar en la dependencia en la que se sustentó el examen de concurso su recibo de aviso de cuotas escolares expedido por la Tesorería General de la UANL para el semestre a cursar, así como el formato de inscripción definitiva, en el cual se indica los requisitos, el día, la hora y la ventanilla a la que deben acudir al Departamento Escolar y de Archivo y que deberán imprimir en la página WEB con su contraseña.
+Efectuar el pago del recibo de cuotas escolares en la institución bancaria indicada y por la cantidad correspondiente a los estudiantes ajenos a la UANL, antes de la fecha de vencimiento. 
+Presentarse en la División de Inscripciones y Credencialización del Departamento Escolar y de Archivo, instalada en la planta baja del edificio anexo a la Torre de Rectoría, el día y la hora programados en el formato de inscripción definitiva, con los siguientes documentos en original y copia fotostática legible (sólo alumnos de preparatoria, alumnos de licenciatura y alumnos de posgrado ajenos a la UANL):</P>
+ 
+
+
+       <center><img src="imagenes/cccc.jpg"  width="275" height="183"></center>
+     </div>
+  </div>
+<div data-role="footer" data-theme="b" data-position="fixed">
+<div data-role="footer" align="center" data-theme="b">
+       <img src="imagenes/mdpi.png"  width="46" height="46">
+    <h4>APLICACION FINAL</h4>
+   <h4>ANA YELI ROJAS GONZALEZ</h4>
+   </div>
+ </div>
+  </div>
+  
+ <div data-role="page" id="pagina2" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+    <h1> ASTRONOMIA</h1>
+    </div>
+   <div data-role="content" align="center">
+    <div>
+   
+     <center><img src="imagenes/aa.jpg"  width="209" height="196"></center>
+       <p><center>ASTRONOMIA </center></p>
+       <p> Qué es la ASTRONOMIA?
+Etimológicamente hablando: podría decirse que la astrología estudia la posición y el movimiento de los astros.
+No es una ciencia exacta. Únicamente, nos habla de tendencias o inclinaciones, que el hombre siempre podrá modificar de acuerdo a su voluntad, esfuerzo y libre albedrío a lo largo de toda su vida.
+La astrología pertenece a los conocimiento de la tradición metafísica, conocida como sabiduría antigua y que ha prevalecido a través de los siglos. Surge como una necesidad de encontrar un orden oculto detrás de la confusión y el caos existente en el mundo. Tiene que ver con el horóscopo; ésta palabra, proviene de "hora" y "scope" (observar), es decir, significa "observación de acuerdo a la hora de nacimiento". La primera conclusión que podemos sacar al respecto es que los mal llamados "horóscopos" de los periódicos en realidad no lo son, por el simple hecho de que ellos no tienen en cuenta la hora, día, mes y año de nacimiento de cada persona, sino sólo el día y el mes. Por tanto, no es astrológicamente válido dividir a las personas en 12 grupos o "tribus", diciendo "del 21 de marzo al 22 de abril, Aries"; "del 22 de abril al 22 de mayo, Tauro", etc. y pretender que a todas las personas de Aries el mismo día les vayan a ocurrir las mismas cosas.
+Es importante saber, que decir "horóscopo" es lo mismo que decir carta astral (gráfico de los astros). Hay varios tipos de Carta Astral, los cuales son usados por los astrólogos para hacer sus estudios. La carta astral básica y fundamental es la llamada Carta Natal o carta astral de nacimiento.
+Al tener una Carta Natal propia, uno podrá saber en qué signos y en qué grados tenía a sus diez planetas en el momento del nacimiento. Para entender lo que es el ascendente, aspectos planetarios, casas y signos zodiacales, veamos el dibujo de una Carta Astral: </p>
+       <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Imagen1','','imagenes/bb.jpg',1)"><img src="imagenes/aa.jpg" width="209" height="196" id="Imagen1"></a>
+<p>Orientación para interesados en estudiar Astronomía: 
+
+Diariamente recibimos consultas de alumnos interesados en la Astronomía como posible profesión. Las dudas y confusiones son similares en la mayoría de los casos. Es por ello que hemos confeccionado esta breve guía alrededor de las siguientes preguntas básicas :
+
+1) ¿A qué se dedica un astrónomo?
+2) ¿Cómo se forma un astrónomo?
+3) ¿Dónde estudiar?
+4) Algunos testimonios y entrevistas a profesionales.
+
+Te sugerimos leer la información en este orden. Si tenés alguna inquietud que no esté respondida, comunicate con nosotros a través de difusion-at-iafe.uba.ar con asunto [orientación]. Gustosamente te ayudaremos en todo lo que se encuentre a nuestro alcance.
+
+En nuestro Instituto realizamos anualmente Talleres de Ciencia para Jóvenes que cuentan entre sus objetivos con la orientación vocacional de los estudiantes.
+Además para darse cuenta si les gustaría estudiar ciencias naturales los ayudará el participar en actividades científicas a nivel nacional e internacional como Ferias de Ciencias, Olimpíadas, Pasantías, etc.</p>
+<center><img src="imagenes/cc.jpg"  width="276" height="183"></center>
+<div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+     <h2>REQUISITOS PARA INGRESAR A UNA ESCUELA DE ASTRONOMIA EN LA UNAM</h2>
+     <P>Recien termine la preparatoria con un promedio general de 8.7 
+
+Ahora estoy a punto de ingresar a una carrera universitaria, pues me han dicho que para entrar a la UNAM y estudiar Astronomía, necesito primero terminar una licenciatura en física o matemáticas, pero no se si pueda estudiar otra carrera distinta a física o matemáticas, como por ejemplo: computación, mineria, etc para obtener una licenciatura en esta otra carrera y luego tomar una maestría en la UNAM sobre Astronomía, Astrofísica (o algo que tenga que ver con el estudio del universo). </P>
+
+
+<P>Por lo que tengo esta gran duda sobre como puedo obtener un titulo de Astrofísico aqui en México, a caso solo puedo estudiar Astronomía en la ciudad de México o existe otro lugar dentro de este pais donde pueda obtener dicho titulo? ya que soy originario de Sombrerete, Zacatecas y no tengo idea de como puedo estudiar astronomía y todo lo relacionado con el estudio del universo.</P>
+<P>
+
+Y no hay ninguna carrera como matemáticas o física en esta ciudad de Sombrerete, Zacatecas por lo que requiero de su ayuda con el motivo de saber como puedo estudiar Astronomía en la UNAM y como se ingresa a dicha institución educativa. 
+
+A caso necesito estudiar obligatoriamente una licenciatura en cualquier parte de México pero que sea Física o Matemáticas unicamente para luego ingresar a una maestría en la UNAM sobre Astronomía, Astrofisica, etc? 
+
+O puedo estudiar una carrera tecnica como computación (con una duración de tres años) para obtener una licenciatura y posteriormente presentar un examen de ingreso en la UNAM para pertenecer a la unidad de Astronomía de dicha universidad. 
+
+Espero y me puedan ayudar pues tengo que tomar una dificil decisión que afectara el resto de mi vida por lo que necesito estar muy informado sobre cuales son mis opciones a elegir sobre mis estudios. 
+
+p.d. si definitivamente necesitara estudiar física o matemáticas tendria que estudiar una licenciatura y también una maestría en la ciudad de Zacatecas, México? 
+
+o solo necesito una licenciatura para posteriormente estudiar en la UNAM y volverme un astronomo (astrofísico, esutudioso del universo, etc) mediante una maestría en dicha institución de la UNAM 
+
+Es verdad que un Astrofísico se la pasa viajando alrededor del mundo con motivo de estudiar el universo con ayuda de distintos telescopios y herramientas? por que si asi fuera, me parece una buena profesión ya que podría conocer todo el planeta por medio de mi profesión.</P>
+<P> 
+
+Tambien necesito saber cuanto dinero gana un astrofísico al graduarse y que titulos necesita para ganar todo ese dinero (con una maestría basta o necesito obtener un doctorado rapidamente?) y aun más importante, donde trabaja el Astrofísico, ya que no me interesa ser maestro y dar clases hasta el cansancio, sino que mas bien me interesa investigar y crear teorias, sobre los agujeros negros por ejemplo (ya que me interesan bastante este tipo de temas pero la vida de maestro no me interesa en lo absoluto) 
+
+Por ultimo dire que soy un joven de 18 años de clase media-baja por lo que se me hace complicado estudiar en la UNAM (por cuestiones economicas), a caso puedo tramitar una beca para dedicar todo mi tiempo a la escuela y no tener que trabajar? 
+
+Donde podría vivir en la ciudad de México que se encuentre cerca de la UNAM para ir a mis clases de Astronomía? me han dicho que existe una ''casa del estudiante'' pero no me parece que sea un lugar tranquilo para estudiar, descansar, dormir, etc o a caso ese lugar de verdad sera disciplinado y apto para que viva ahi un estudiante dedicado y responsable? </P>
+    
+    </div>
+    </div>
+
+     </div>
+   </div>
+ <div data-role="footer" data-theme="b" data-position="fixed">
+<div data-role="footer" align="center" data-theme="b">
+
+       <img src="imagenes/mdpi.png"  width="46" height="46">
+     <h4>APLICACION FINAL</h4>
+     <h4>ANA YELI ROJAS GONZALEZ</h4>
+   </div>
+ </div>
+</div>
+
+<div data-role="page" id="pagina3" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true"  data-back-btn-text="Regresar" data-back-btn-theme="a">
+    <h1>DERECHO </h1>
+  </div>
+  <div data-role="content" align="center">
+    <div>
+      <P><CENTER>DERECHO </CENTER></p>
+       <center><img src="imagenes/aaa.jpg"  width="276" height="183"></center>
+      <P><CENTER>MISION </CENTER></p>
+<p>
+Formar juristas e investigadores para ejercer el liderazgo científico con justicia, equidad, solidaridad, ética social y sentido propositivo de soluciones a los problemas jurídicos de la sociedad contemporánea; impulsar la investigación inter, multi y transdisciplinaria; y promover la cultura de la legalidad, innovación y difusión jurídicas ejerciendo la transparencia por medio del uso y apropiación de las tecnologías de la información y comunicaciones.
+<P><CENTER>VISION </CENTER></p>
+Acrecentar el liderazgo de los juristas e investigadores a nivel nacional e internacional, buscando la innovación científica y académica con una visión crítica en la Sociedad del Conocimiento.
+  </p> 
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image13','','imagenes/aaa.jpg',1)"><img src="imagenes/bbb.jpg" width="276" height="183" id="Image13"></a>
+<p>
+Perfíl del profesionista
+
+Debe poseer valores, conocimientos, habilidades, hábitos, aptitudes y actitudes que definen en lo fundamental, el pensar y actuar de una persona inclinada a proteger el orden, la seguridad y en general las metas que toda sociedad requiere para alcanzar su desarrollo y posición dentro del marco internacional.
+
+Objetivo
+
+Otorgar al estudiante los instrumentos jurídicos y éticos necesarios para que éste cumpla cabalmente la función de profesional del Derecho en los ámbitos de la actividad de esta carrera.
+
+Características deseables del estudiante
+
+Honesto, con vocación de servicio, sensible a los problemas sociales, abierto a todo conocimiento vínculado a la aprehensión de aspectos culturales y humanísticos que engloben el conocimiento integral encaminado a la justicia y equidad.
+
+Campo de trabajo
+
+Ejerce la profesión en diferentes actividades que la sociedad demanda como son: la procuración e impartición de justicia en el ámbito registral, así como abogado postulante o asesor de empresas. </P>
+<center><img src="imagenes/ccc.jpg"  width="276" height="183"></center>
+
+   <div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+    <H4>REQUISITOS PARA INGRASAR A LA UNAM EN LA RAMA DE  DERECHO </H4>
+    <P>
+REQUISITOS ESTABLECIDOS PARA PODER</P>
+<H4><CENTER>INGRESAR A LA FACULTAD DE DERECHO</CENTER></H4>
+<P>CAMBIO DE PLANTEL REINGRESO (SISTEMA ESCOLARIZADO)
+1. Estar inscrito en la carrera para la cual solicita el cambio de plantel.
+2. Encontrarse dentro de los dos primeros años de ingreso a la licenciatura.
+3. Una vez inscrito en el Sistema de Universidad Abierta NO se autorizará el
+cambio al Sistema Escolarizado.
+4. Que el cupo de los planteles lo permita.
+5. Promedio de 9.0 y ser alumno regular.
+6. No adeudar materias de semestres anteriores en su trayectoria escolar.
+7. Acreditar con una calificación mínima de 8.0, los exámenes de ingreso que
+aplica la Facultad
+8. Los aspirantes seleccionados ingresarán conforme al Plan de Estudios (clave
+1447) debiendo acreditar las 68 asignaturas que lo conforman.</P>
+<H4><CENTER>CAMBIO DE PLANTEL REINGRESO (SISTEMA UNIVERSIDAD ABIERTA)</CENTER></H4>
+<P>1. Estar inscrito en la carrera para la cual solicita el cambio de plantel.
+2. Encontrarse dentro de los dos primeros años de ingreso a la licenciatura.
+3. Una vez inscrito en el Sistema de Universidad Abierta NO se autorizará el
+cambio al Sistema Escolarizado.
+4. Que el cupo de los planteles lo permita.
+5. Promedio de 9.0 y ser alumno regular.
+6. No adeudar materias de semestres anteriores en su trayectoria escolar.
+7. Acreditar con una calificación mínima de 8.0, los exámenes de ingreso que
+aplica la Facultad.
+8. En virtud de la limitación de espacios solamente se recibirán 10 alumnos que
+cubran los perfiles más altos de los puntos antes mencionados.
+Los aspirantes seleccionados ingresarán conforme al Plan de Estudios (clave
+1471) debiendo acreditar las 68 asignaturas que lo conforman.
+3
+<H4><CENTER>INGRESO EN AÑOS POSTERIORES AL PRIMERO POR
+ACREDITACIÓN Y/o REVALIDACIÓN
+SISTEMA ESCOLARIZADO</CENTER></H4>
+1. Haber obtenido un promedio mínimo de 7.0 o su equivalente en el
+bachillerato.
+2. Aprobar, con promedio mínimo de 8.0, los exámenes escritos y orales
+aplicados por la Facultad de Derecho, de las asignaturas que deberán
+acreditar o revalidar.
+3. Cubrir por lo menos las asignaturas del primer año de estudios de la UNAM al
+realizarse la equivalencia de materias se hará de no menos del 20% ni más
+del 40% de los créditos conforme al plan de estudios correspondiente.
+4. Entregar original y fotocopia de los siguientes documentos:
+• Acta de nacimiento.
+• Certificado de secundaria o su equivalente en estudios extranjeros.
+• Certificado de bachillerato o su equivalente en estudios extranjeros.
+• Certificado parcial de licenciatura o su equivalente en estudios
+extranjeros.
+• Programas de las asignaturas aprobadas en el certificado de
+licenciatura sellados por la Universidad de procedencia.
+• Cuatro fotografías tamaño credencial ovalado.
+• Pago correspondiente a tres días de salario mínimo.
+5. Los aspirantes seleccionados ingresarán conforme al Plan de Estudios (clave
+1447) debiendo acreditar las 68 asignaturas que lo conforman.
+4
+<H4><CENTER>INGRESO EN AÑOS POSTERIORES AL PRIMERO POR
+ACREDITACIÓN Y/o REVALIDACIÓN
+SISTEMA UNIVERSIDAD ABIERTA</CENTER></H4>
+1. Haber obtenido un promedio mínimo de 7.0 o su equivalente en el
+bachillerato.
+2. Aprobar con promedio mínimo de 8.0 el examen escrito y oral de las
+asignaturas que deberán acreditar o revalidar.
+3. Cubrir por lo menos las asignaturas del primer año de estudios de la UNAM al
+realizarse la equivalencia de materias se hará de no menos del 20% ni más
+del 40% de los créditos conforme al plan de estudios correspondiente.
+4. Entregar original y fotocopia de los siguientes documentos:
+• Acta de nacimiento.
+• Certificado de secundaria o su equivalente en estudios extranjeros.
+• Certificado de bachillerato o su equivalente en estudios extranjeros.
+• Certificado parcial de licenciatura o su equivalente en estudios extranjeros.
+• Programas de las asignaturas aprobadas en el certificado de licenciatura
+sellados por la Universidad de procedencia.
+• Cuatro fotografías tamaño credencial ovaladas.
+• Pago correspondiente a tres días de salario mínimo.
+• En virtud de la limitación de espacios solamente se recibirán 10 alumnos que
+cubran los perfiles más altos de los puntos antes mencionados.
+Los aspirantes seleccionados ingresarán conforme al Plan de Estudios (clave
+1471) debiendo acreditar las 68 asignaturas que lo conforman.</P>
+      </div>
+   </div>
+  </div>
+   </div>
+  
+   <div data-role="footer" data-theme="b" data-position="fixed">
+<div data-role="footer" align="center" data-theme="b">
+       <img src="imagenes/mdpi.png"  width="46" height="46">
+    <h4>APLICACION FINAL</h4>
+   <h4>ANA YELI ROJAS GONZALEZ</h4>
+   </div>
+ </div>
+ </div>
+</body>
+</html>
